@@ -1,0 +1,16 @@
+spring:
+  profiles:
+    active: dev
+---
+spring:
+  profiles: dev
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/school-db
+    username: root
+    password: Hima@63546
+    driver-class-name: com.mysql.cj.jdbc.Driver
